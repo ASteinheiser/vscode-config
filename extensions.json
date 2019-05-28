@@ -4,6 +4,7 @@
 
   // List of extensions which should be recommended for users of this workspace.
   "recommendations": [
+    "dbaeumer.vscode-eslint",
     "mgmcdermott.vscode-language-babel",
     "hookyqr.beautify",
     "dsznajder.es7-react-js-snippets",
