@@ -8,7 +8,6 @@
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,
   "breadcrumbs.enabled": true,
-  "workbench.iconTheme": "vscode-icons",
   "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
   "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -17,7 +16,6 @@
         "scope": [
           //following will be in italic (=FlottFlott)
           "comment",
-          "entity.name.type.class", //class names
           "keyword", //import, export, return…
           // "constant", //String, Number, Boolean…, this, super
           "storage.modifier", //static keyword
@@ -40,23 +38,21 @@
         "settings": {
           "fontStyle": ""
         }
+      },
+      {
+        "scope": [
+          "entity.name.type.class",
+          "entity.name.type",
+          "entity.name.function",
+          "entity.name.namespace"
+        ],
+        "settings": {
+          "foreground": "cyan"
+        }
       }
     ]
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "typescriptreact",
-      "autoFix": true
-    }
-  ],
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false
@@ -69,5 +65,16 @@
   },
   "[typescriptreact]": {
     "editor.formatOnSave": false
+  },
+  "editor.minimap.maxColumn": 80,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "git.enableCommitSigning": true,
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
 }
