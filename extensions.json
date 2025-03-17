@@ -4,14 +4,13 @@
 
   // List of extensions which should be recommended for users of this workspace.
   "recommendations": [
-    "dbaeumer.vscode-eslint",
     "mgmcdermott.vscode-language-babel",
-    "hookyqr.beautify",
-    "dsznajder.es7-react-js-snippets",
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
-    "vscode-icons-team.vscode-icons",
-    "mattn.lisp",
-    "2gua.rainbow-brackets"
+    "christian-kohler.npm-intellisense",
+    "2gua.rainbow-brackets",
+    "vscode-icons-team.vscode-icons"
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
   "unwantedRecommendations": []
