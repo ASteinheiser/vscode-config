@@ -1,25 +1,21 @@
 {
-  "window.zoomLevel": 2,
-  "editor.tabSize": 2,
-  "editor.renderWhitespace": "boundary",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "workbench.startupEditor": "newUntitledFile",
-  "git.confirmSync": false,
-  "javascript.suggest.autoImports": false,
-  "typescript.suggest.autoImports": false,
-  "breadcrumbs.enabled": true,
-  "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
+  "window.commandCenter": true,
+  "terminal.integrated.fontFamily": "MesloLGM NFM",
   "editor.fontFamily": "Dank Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.tabSize": 2,
   "editor.fontLigatures": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Cursor Dark High Contrast",
   "editor.tokenColorCustomizations": {
-    "textMateRules": [{
+    "textMateRules": [
+      {
         "scope": [
-          //following will be in italic (=FlottFlott)
           "comment",
-          "keyword", //import, export, return…
-          // "constant", //String, Number, Boolean…, this, super
-          "storage.modifier", //static keyword
-          "storage.type.class.js", //class keyword
+          "keyword", // import, export, return...
+          "storage.modifier", // static keyword
+          "storage.type.js", // const keyword
+          "storage.type.class.js", // class keyword
+          "storage.type.function.js" // function keyword
         ],
         "settings": {
           "fontStyle": "italic"
@@ -30,51 +26,16 @@
           //following will be excluded from italics (VSCode has some defaults for italics)
           "invalid",
           "keyword.operator",
-          "constant.numeric.css",
           "keyword.other.unit.px.css",
+          "constant.numeric.css",
           "constant.numeric.decimal.js",
-          "constant.numeric.json"
+          "constant.numeric.json",
+          "variable.parameter"
         ],
         "settings": {
           "fontStyle": ""
         }
-      },
-      {
-        "scope": [
-          "entity.name.type.class",
-          "entity.name.type",
-          "entity.name.function",
-          "entity.name.namespace"
-        ],
-        "settings": {
-          "foreground": "cyan"
-        }
       }
     ]
-  },
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "editor.minimap.maxColumn": 80,
-  "workbench.iconTheme": "vscode-icons",
-  "vsicons.dontShowNewVersionMessage": true,
-  "git.enableCommitSigning": true,
-  "go.formatTool": "goimports",
-  "go.useLanguageServer": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
   }
 }
